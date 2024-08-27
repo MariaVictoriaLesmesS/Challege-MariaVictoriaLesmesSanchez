@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+    </header>
+    <main class="presentation" id="presentation">
+        <section class="content-presentation">
+            <textarea class="textBox" id="textBox" placeholder="Ingrese el texto aqui" oninput="iscifrado()" ></textarea>
+                  
+            <div class="iteractive-presentation">
+                <p class="recomendation">
+                    este encriptador no funciona con letras mayusculas
+                    o con acento (tildes)
+                </p>    
+                <div class="buttoms">
+                    <button class="functions-presentation" id="cifrar" onclick="cifrar()">Encriptar</button>
+                    <button class="functions-presentation" id="descifrar" onclick="descifrar()" disabled="true">Desencriptar</button>
+                </div>
+            </div>
+               
+        </section >
+        <div class="output">
+            <div class="output-content">
+                <div class="output-text">
+                    <img src="/img/Muñeco.png" class="muñeco">
+                    <h1>Ningún mensaje fue encontrado</h1>
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>     
+            </div>
+            <button class="functions-presentation" id="copiar" style="visibility:hidden" onclick="copiar()">copiar</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>
